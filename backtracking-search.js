@@ -93,7 +93,7 @@ function placeForQueen(x, y) {
   for(var i = 0; i < y; i++) {
     if(place[i] === x) {
       return false
-    } else if(Math.abs(i - y) - Math.abs(place[i] - x)) {
+    } else if(Math.abs(i - y) === Math.abs(place[i] - x)) {
       return false
     }
   }
