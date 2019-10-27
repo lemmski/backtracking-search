@@ -61,7 +61,7 @@ function permutationSearch(k) {
       }
     }
   }
-} 
+}
 permutationSearch(0)
 
 
@@ -84,10 +84,10 @@ function queenSearch(y) {
 }
 
 function placeForQueen(x, y) {
-  for(var i = 0; i < y; i++) {
-    if(place[i] === x) {
+  for (var i = 0; i < y; i++) {
+    if (place[i] === x) {
       return false
-    } else if(Math.abs(i - y) === Math.abs(place[i] - x)) {
+    } else if (Math.abs(i - y) === Math.abs(place[i] - x)) {
       return false
     }
   }
