@@ -46,7 +46,7 @@ subsearch(0)
 const values = []
 const Nvalue
 const there = []
-function permutatioSearch(k) {
+function permutationSearch(k) {
   if (k === Nvalue) {
     console.log(values)
   } else {
@@ -54,7 +54,7 @@ function permutatioSearch(k) {
       if (!there[i]) {
         there[i] = true
         values[k] = i
-        permutatioSearch(k + 1)
+        permutationSearch(k + 1)
         there[i] = false
       }
     }
