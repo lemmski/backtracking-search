@@ -20,15 +20,6 @@ search(0)
 
 Searching subset
 
-procedure haku(k)
-if k == n
-// k¨asittele osajoukko
-else
-for i = 0 to 1
-valinta[k] = i
-haku(k+1)
-
-
 */
 console.log('Starting subsearch for', N)
 const selection = []
