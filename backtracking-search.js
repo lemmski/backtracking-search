@@ -41,7 +41,6 @@ subsearch(0)
 
 /*
   Iterating permutations
-  
 */
 
 const values = []
