@@ -77,7 +77,7 @@ const gridSize = 4
 let counter = 0
 place = []
 function queenSearch(y) {
-  in (y === gridSize) {
+  if (y === gridSize) {
     counter++
   } else {
     for (var x = 0; x < gridSize; x++) {
