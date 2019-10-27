@@ -1,5 +1,5 @@
-console.log('Starting',  process.argv[1], 'search with limit', process.argv[2])
-const LIMIT = process.argv[2]
+console.log('Starting', process.argv[1], 'search with limit', process.argv[2])
+const LIMIT = process.argv[2] || 4
 const N = 3
 const numbers = new Array(3)
 function search(k) {
