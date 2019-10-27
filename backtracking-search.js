@@ -66,13 +66,7 @@ permutationSearch(0)
 
 
 /* Solving the chess queen problem procedure haku(y)
-if y == n
-  laskuri += 1
-else
-  for x = 0 to n-1
-    if voi_sijoittaa(y,x)
-      kohta[y] = x
-      haku(y+1)*/
+*/
 const gridSize = 4
 let counter = 0
 place = []
