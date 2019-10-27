@@ -63,3 +63,39 @@ function permutationSearch(k) {
   }
 } 
 permutationSearch(0)
+
+
+/* Solving the chess queen problem procedure haku(y)
+if y == n
+  laskuri += 1
+else
+  for x = 0 to n-1
+    if voi_sijoittaa(y,x)
+      kohta[y] = x
+      haku(y+1)*/
+const gridSize = 4
+let counter = 0
+place = []
+function queenSearch(y) {
+  in (y === gridSize) {
+    counter++
+  } else {
+    for (var x = 0; x < gridSize; x++) {
+      if (placeForQueen(x, y)) {
+        place[y] = x
+        queenSearch(y + 1)
+      }
+    }
+  }
+}
+
+function placeForQueen(x, y) {
+  for(var i = 0; i < y; i++) {
+    if(place[i] === x) {
+      return false
+    } else if(Math.abs(i - y) - Math.abs(place[i] - x)) {
+      return false
+    }
+  }
+  return true
+}
