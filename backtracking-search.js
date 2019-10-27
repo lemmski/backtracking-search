@@ -54,3 +54,20 @@ subsearch(0)
           mukana[i] = false
 */
 
+const values = []
+const Nvalue
+const there = []
+function permutatioSearch(k) {
+  if (k === Nvalue) {
+    console.log(values)
+  } else {
+    for (var i = 1; i <= Nvalue; i++) {
+      if (!there[i]) {
+        there[i] = true
+        values[k] = i
+        permutatioSearch(k + 1)
+        there[i] = false
+      }
+    }
+  }
+} 
