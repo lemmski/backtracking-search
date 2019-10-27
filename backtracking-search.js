@@ -41,17 +41,7 @@ subsearch(0)
 
 /*
   Iterating permutations
-
-  procedure haku(k)
-     if k == n
-      print(luvut)
-    else
-      for i = 1 to n
-        if not mukana[i]
-          mukana[i] = true
-          luvut[k] = i
-          haku(k+1)
-          mukana[i] = false
+  
 */
 
 const values = []
