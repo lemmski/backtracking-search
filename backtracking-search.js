@@ -44,8 +44,10 @@ subsearch(0)
 */
 
 const values = []
-const Nvalue
+const Nvalue = 4
 const there = []
+
+console.log('Starting permutation search for N value', Nvalue)
 function permutationSearch(k) {
   if (k === Nvalue) {
     console.log(values)
