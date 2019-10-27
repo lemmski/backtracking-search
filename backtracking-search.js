@@ -60,3 +60,4 @@ function permutationSearch(k) {
     }
   }
 } 
+permutationSearch(0)
